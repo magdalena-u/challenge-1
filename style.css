@@ -1,0 +1,391 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Titillium Web:300', sans-serif;
+    font-size: 16px;
+    color: rgb(155, 155, 155);
+
+}
+
+h1 {
+    font-size: 32px;
+    text-shadow: 2px 2px 0px black;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* main section */
+section {
+    display: flex;
+    position: relative;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-image: url('images/background_big.png');
+    background-size: cover;
+    height: 1000vh;
+    max-height: 1500px;
+    width: 90vw;
+    max-width: 1200px;
+    padding: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/* main logo and Form */
+
+.main-logo {
+    height: 10%;
+    min-height: 111px;
+    width: 100%;
+}
+
+.main-form {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 90%;
+}
+
+
+/* style of logo: main and on the bottom of page */
+
+.last-logo {
+    position: relative;
+}
+
+.picture1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.23;
+    padding-bottom: 40px;
+}
+
+.picture2 {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0.23;
+}
+
+
+/* how look all forms */
+
+form,
+.last-logo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-width: 400px;
+}
+
+
+div.form-box {
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 20px solid rgb(0, 0, 0, 0.23);
+    background-clip: padding-box;
+    border-radius: 6px;
+    padding: 5%;
+    height: 80%;
+
+}
+
+
+.register,
+.send {
+    height: 50%;
+    min-height: 500px;
+    padding-right: 4%;
+}
+
+.signIn,
+.recover {
+    height: 27%;
+    min-height: 250px;
+    padding-left: 4%;
+}
+
+.subscribe {
+    height: 22%;
+    min-height: 200px;
+    padding-left: 4%;
+}
+
+.last-logo {
+    height: 15%;
+}
+
+
+/* style of each form */
+
+textarea {
+    height: auto;
+    resize: vertical;
+    max-height: 50%;
+    font-size: 16px;
+    padding: 0.5em;
+    background-color: rgb(244, 244, 244);
+    border: 1px rgb(155, 155, 155) solid;
+}
+
+
+input,
+.location {
+    position: relative;
+    background-color: rgb(244, 244, 244);
+    background-position: 20px 5px;
+    background-repeat: no-repeat;
+    padding-left: 80px;
+    border: 1px rgb(155, 155, 155) solid;
+    border-radius: 3px;
+    line-height: 40px;
+}
+
+.user {
+    background-image: url('icons/glyphicons_003_user.png');
+}
+
+.password {
+    background-image: url('icons/glyphicons_203_lock.png');
+}
+
+.email {
+    background-image: url('icons/glyphicons_010_envelope.png');
+}
+
+.location {
+    background-image: url('icons/glyphicons_242_google_maps.png');
+}
+
+.phone {
+    background-image: url('icons/glyphicons_139_phone.png');
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    background-color: #fff;
+    color: black;
+    outline: none;
+}
+
+::placeholder {
+    color: rgb(155, 155, 155);
+    opacity: 1;
+
+}
+
+/* style of select */
+
+select {
+    width: 100%;
+    height: 40px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -moz-appearance: none;
+    -ms-apperance: none;
+    appearance: none;
+    border: none;
+    background-color: rgb(244, 244, 244);
+    color: rgb(155, 155, 155);
+}
+
+.location:hover,
+.location:hover select,
+select:hover {
+    background-color: #fff;
+}
+
+select:focus {
+    outline: none;
+}
+
+.location::after {
+    content: url('icons/arrow.png');
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+/* style of checkbox and checkbox container */
+
+.checkContainer {
+    position: relative;
+    border: none;
+    font-size: 18px;
+}
+
+.center {
+    align-self: center;
+}
+
+/* hidden default checkbox */
+.checkContainer input {
+    display: none;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 30px;
+}
+
+/* border of checkbox */
+
+.checkContainer label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    border: 1px rgb(155, 155, 155) solid;
+    border-radius: 2px;
+}
+
+/* green square checkmark */
+.fa-square {
+    position: absolute;
+    font-size: 12px;
+    left: 3px;
+    top: 3px;
+    padding: 0;
+    border-radius: 2px;
+    color: transparent;
+    border: none;
+    z-index: 1;
+}
+
+.show {
+    color: rgb(154, 211, 52);
+}
+
+/* standard button */
+button {
+    width: 100%;
+    color: white;
+    font-size: 24px;
+    line-height: 2em;
+    text-shadow: 2px 2px 0px rgb(59, 154, 0);
+    cursor: pointer;
+    background-color: rgb(154, 211, 52);
+    border-radius: 3px;
+    border: 1px solid rgb(59, 154, 0);
+}
+
+button:hover {
+    background-image: linear-gradient(rgb(154, 211, 52), rgb(59, 154, 0));
+}
+
+/* additional features of buttons */
+.button-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button1,
+.button2,
+.button3,
+.button4 {
+    width: 45%;
+    font-size: 18px;
+}
+
+.button3 {
+    background-color: rgb(188, 219, 151);
+    border: 1px solid rgb(144, 202, 109);
+}
+
+.button3:hover {
+    background-image: linear-gradient(rgba(188, 219, 151), rgb(144, 202, 109));
+
+}
+
+.button4 {
+    background-color: rgb(244, 73, 91);
+    border: 1px solid rgb(162, 32, 42);
+    text-shadow: 2px 2px 0px rgb(162, 32, 42);
+}
+
+.button4:hover {
+    background-image: linear-gradient(rgba(244, 73, 91), rgb(162, 32, 42));
+
+}
+
+@media screen and (max-width: 850px) {
+
+    section {
+        width: 100vw;
+        max-height: none;
+        height: auto;
+    }
+
+    .main-form {
+        flex-wrap: nowrap;
+    }
+
+    form,
+    .last-logo {
+        width: 100%;
+    }
+
+    .register,
+    .send,
+    .signIn,
+    .recover,
+    .subscribe {
+        padding: 0;
+    }
+
+    div.form-box {
+        flex-grow: 1;
+    }
+
+    .register {
+        min-height: 600px;
+    }
+
+    .send {
+        min-height: 500px;
+    }
+
+    textarea {
+        max-height: 40%;
+    }
+
+    .signIn,
+    .recover {
+        flex-wrap: nowrap;
+        min-height: 350px;
+    }
+
+    .subscribe,
+    .last-logo {
+        min-height: 250px;
+    }
+}
+
+@media screen and (min-width:851px) and (max-width:1000px) {
+    section {
+        width: 100%;
+    }
+}

@@ -331,12 +331,18 @@ button:hover {
 
 }
 
-@media screen and (max-width: 850px) {
+@media only screen and (max-width: 850px) {
 
     section {
         width: 100vw;
         max-height: none;
         height: auto;
+        padding: 0;
+    }
+
+    .picture1{
+        margin-top: 20px;
+        width:80vw;
     }
 
     .main-form {

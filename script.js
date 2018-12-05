@@ -1,4 +1,4 @@
-const square = document.querySelectorAll(".fa-square");
+const square = document.querySelectorAll('.fa-square');
 
 square.forEach(item => {
     item.addEventListener('click', function () {
